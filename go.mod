@@ -1,4 +1,4 @@
-module github.com/joechristophers/GoEasyJWT.git
+module github.com/joechristophers/GoEasyJWT
 
 go 1.24.2
 
