@@ -8,8 +8,6 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 )
 
-var jwtKey = []byte("eycvkjdhcusdavuyusydnmcs")
-
 func GenerateToken(Claims map[string]any, jwtKey []byte, expireHour int) (string, error) {
 	claims := jwt.MapClaims{
 		"exp": time.Now().Add(time.Hour * time.Duration(expireHour)).Unix(),
